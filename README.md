@@ -35,7 +35,7 @@ LoadModule php5_module libexec/apache2/libphp5.so
 
 charlesでプロキシするか、
 http://qiita.com/syarihu/items/23f5cd9edc9d081e0d65
-にあるようにポートフォワーディングすればOK
+にあるようにポートフォワーディングすればOK(inspectは閉じてはならない)
 
 # 試しにアクセスし、Json結果が表示できればOK
 
