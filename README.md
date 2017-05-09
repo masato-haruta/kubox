@@ -1,6 +1,5 @@
 # 本ソースを以下の場所に設置
 
-- 自身のAndroidプロジェクトルート
 - /Library/WebServer/Documents/kubox(本プロジェクト)
 
 # /etc/apache2/httpd.confを編集
@@ -10,20 +9,19 @@ LoadModule rewrite_module libexec/apache2/mod_rewrite.so
 LoadModule php5_module libexec/apache2/libphp5.so
 ```
 
-のコメントアウトを外す
+上記部分のコメントアウトを外す
+
 `AllowOverride All`にする
 
 `$ sudo apachectl restart`
 
 # AndroidStudioで作成したエミュレータの場合(Url.javaを編集)
 
-
 ```Url.java   
 } else if (BuildConfig.BUILD_TYPE == "stage") {
     return "http://10.0.2.2/kubox/practice/public/";
 }
 ```
-
 
 # 実機の場合(Url.javaを編集)
 
