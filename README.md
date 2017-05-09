@@ -9,6 +9,6 @@
 `$ cd web`
 `$ php -S localhost:8080`
 
-# 試しにアクセスし、Json結果が取得できればOK
+# 試しにアクセスし、Json結果が表示できればOK
 
 `http://localhost:8080/kubox/practice/public/items`
