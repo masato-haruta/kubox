@@ -17,8 +17,7 @@ LoadModule php5_module libexec/apache2/libphp5.so
 
 # AndroidStudioで作成したエミュレータの場合
 
-`Url.java`
-```
+```java:Url.java
 } else if (BuildConfig.BUILD_TYPE == "stage") {
     return "http://10.0.2.2/kubox/practice/public/";
 }
@@ -26,8 +25,7 @@ LoadModule php5_module libexec/apache2/libphp5.so
 
 # 実機の場合
 
-`Url.java`
-```
+```java:Url.java
 } else if (BuildConfig.BUILD_TYPE == "stage") {
     return "http://localhost8000/kubox/practice/public/";
 }
