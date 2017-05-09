@@ -15,15 +15,17 @@ LoadModule php5_module libexec/apache2/libphp5.so
 
 `$ sudo apachectl restart`
 
-# AndroidStudioで作成したエミュレータの場合
+# AndroidStudioで作成したエミュレータの場合(Url.javaを編集)
 
-```Url.java
+
+```Url.java   
 } else if (BuildConfig.BUILD_TYPE == "stage") {
     return "http://10.0.2.2/kubox/practice/public/";
 }
 ```
 
-# 実機の場合
+
+# 実機の場合(Url.javaを編集)
 
 ```Url.java
 } else if (BuildConfig.BUILD_TYPE == "stage") {
