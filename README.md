@@ -1,4 +1,4 @@
-# 本ソースを以下の場所に設置
+# 本ソースを以下の場所に設置(MacのApacheをいじる場合)
 
 - /Library/WebServer/Documents/kubox(本プロジェクト)
 
@@ -15,6 +15,17 @@ LoadModule php5_module libexec/apache2/libphp5.so
 
 `$ sudo apachectl restart`
 
+# 本ソースを以下の場所に設置(MacのApacheをいじらない場合。設置場所は一例)
+
+`~/git/kubox(本プロジェクト)`
+
+# PHPで簡易Webサーバ起動(実機のみ可)
+
+```
+$ cd ~/git
+$ php -S localhost:7777
+```
+
 # AndroidStudioで作成したエミュレータの場合(Url.javaを編集)
 
 ```Url.java   
@@ -27,7 +38,7 @@ LoadModule php5_module libexec/apache2/libphp5.so
 
 ```Url.java
 } else if (BuildConfig.BUILD_TYPE == "stage") {
-    return "http://localhost8000/kubox/practice/public/";
+    return "http://localhost:7777/kubox/practice/public/";
 }
 ```
 
@@ -38,4 +49,4 @@ http://qiita.com/syarihu/items/23f5cd9edc9d081e0d65
 # 試しにアクセスし、Json結果が表示できればOK
 
 エミュレータ: `http://10.0.2.2/kubox/practice/public/`   
-実機: `http://localhost:8000/kubox/practice/public/items`
+実機: `http://localhost:7777/kubox/practice/public/items`
