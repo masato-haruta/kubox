@@ -48,5 +48,5 @@ http://qiita.com/syarihu/items/23f5cd9edc9d081e0d65
 
 # 試しにアクセスし、Json結果が表示できればOK
 
-エミュレータ: `http://10.0.2.2/kubox/practice/public/`   
+エミュレータ: `http://10.0.2.2/kubox/practice/public/items`   
 実機: `http://localhost:7777/kubox/practice/public/items`
